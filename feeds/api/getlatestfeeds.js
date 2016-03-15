@@ -5,8 +5,8 @@
  * @version 1.1 | 2015-02-24 | SeasonLi    // Deprecate req.query()
  */
 
-var mysqlCon = require('../../dbCon/mysqlCon.js');
-var timeFormater = require('folivora/util/timeFormater.js');
+var mysqlCon = require('../../dbCon/mysqlCon.js'),
+  timeFormater = require('folivora/util/timeFormater.js');
 
 
 module.exports = function (req, res) {
@@ -39,7 +39,7 @@ module.exports = function (req, res) {
           })()
         }
       };
-      res.send(resData);
+      res.json(resData);
     });
   } else {
     res.send({
