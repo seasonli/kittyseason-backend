@@ -46,7 +46,7 @@ switch (process.argv[3]) {
     break;
 }
 
-// Router
+// Router middleware
 router(server);
 
 // Listen to port
