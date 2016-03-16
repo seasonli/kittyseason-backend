@@ -1,6 +1,7 @@
 # Directory
 node_modules/
 view/
+release/
 
 # File
 .DS_Store
