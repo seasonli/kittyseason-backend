@@ -8,7 +8,7 @@ var engine = require('consolidate').mustache;
 
 
 module.exports = function (req, res) {
-  engine('../../view/page/index.html', {}, function (err, html) {
+  engine('view/page/index.html', {}, function (err, html) {
     res.send(html);
   });
 };
